@@ -1,0 +1,15 @@
+spring:
+ application:
+  name: inv-service-registry
+
+server:
+ port: 8761
+ servlet:
+  contextPath: /eureka
+
+eureka:
+ client:
+  registerWithEureka: false
+  fetchRegistry: false
+  server:
+   waitTimeInMsWhenSyncEmpty: 0
