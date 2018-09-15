@@ -20,3 +20,12 @@ server:
  port: 8001
  servlet:
   contextPath: /user-db
+
+eureka:
+ client:
+  registerWithEureka: true
+  fetchRegistry: true
+  serviceUrl:
+   defaultZone: http://127.0.0.1:8761/eureka
+ instance:
+  hostname: 127.0.0.1
