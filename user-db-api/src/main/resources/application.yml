@@ -1,0 +1,22 @@
+spring:
+ application:
+  name: user-db-api
+ datasource:
+  driver-class-name: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/customer
+  username: postgres
+  password: postgres
+ jpa:
+  show-sql: true
+  hibernate:
+   ddl-auto: update
+  properties:
+   hibernate:
+    temp:
+     use_jdbc_metadata_defaults: false
+  database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+
+server:
+ port: 8001
+ servlet:
+  contextPath: /user-db
